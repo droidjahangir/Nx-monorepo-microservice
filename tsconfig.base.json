@@ -1,0 +1,32 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@test-workspace/kafka/utils": ["libs/kafka/utils/src/index.ts"],
+      "@test-workspace/lib": ["lib/src/index.ts"],
+      "@test-workspace/myapp/lib": ["libs/myapp/lib/src/index.ts"],
+      "@test-workspace/schema-registry": ["libs/schema-registry/src/index.ts"],
+      "@test-workspace/shared": ["libs/shared/src/index.ts"],
+      "@test-workspace/shared/database": ["libs/shared/database/src/index.ts"],
+      "@test-workspace/utils/kafka": ["libs/utils/kafka/src/index.ts"],
+      "@test-workspace/utils/logging": ["libs/utils/logging/src/index.ts"],
+      "@test-workspace/utils/rabbit-mq": ["libs/utils/rabbit-mq/src/index.ts"],
+      "@test-workspace/utils/redis": ["libs/utils/redis/src/index.ts"],
+      "@test-workspace/utils/tracing": ["libs/utils/tracing/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
